@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Website biography cá nhân của Trần Trung Kiên.">
+  <meta name="theme-color" content="#090909">
+  <title>Trần Trung Kiên | Biography</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="cursor-glow" id="cursorGlow"></div>
+  <header class="site-header">
+    <a class="logo" href="#home">TRUNGKIEN<span>.</span></a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Mở menu" aria-expanded="false">☰</button>
+    <nav id="nav">
+      <a href="#home">Trang chủ</a><a href="#about">Giới thiệu</a><a href="#projects">Dự án</a>
+      <a href="#gallery">Thư viện</a><a href="#achievements">Thành tích</a><a href="#contact">Liên hệ</a>
+    </nav>
+    <button class="music-button" id="musicToggle" aria-pressed="false" title="Bật/tắt nhạc">♫ <span>Nhạc</span></button>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <p class="eyebrow">XIN CHÀO, MÌNH LÀ</p>
+        <h1>Trần Trung <span>Kiên</span></h1>
+        <p class="hero-text">Một người trẻ yêu thích công nghệ, sáng tạo và luôn học hỏi mỗi ngày.</p>
+        <a class="button" href="#about">Khám phá thêm <span>↗</span></a>
+      </div>
+      <div class="hero-art-wrapper">
+        <div class="hero-art" aria-label="Ảnh đại diện minh họa">
+          <label class="image-frame hero-frame" for="heroImageInput" title="Nhấn để tải ảnh đại diện">
+            <img id="heroImagePreview" alt="Ảnh đại diện" hidden>
+            <span class="image-placeholder">＋<small>Tải ảnh đại diện</small></span>
+            <input class="image-input" id="heroImageInput" type="file" accept="image/*">
+          </label>
+        </div>
+      </div>
+      <div class="scroll-note">CUỘN ĐỂ KHÁM PHÁ ↓</div>
+    </section>
+
+    <section class="section about" id="about">
+      <div class="section-heading"><p class="eyebrow">01 / ABOUT</p><h2>Về <span>mình</span></h2></div>
+      <div class="about-grid">
+        <label class="image-frame about-photo" for="aboutImageInput" title="Nhấn để tải ảnh giới thiệu">
+          <img id="aboutImagePreview" alt="Ảnh giới thiệu" hidden>
+          <span class="image-placeholder">＋<small>Tải ảnh giới thiệu</small></span>
+          <input class="image-input" id="aboutImageInput" type="file" accept="image/*">
+        </label>
+        <div><h3>Xin chào, mình là Kiên.</h3>
+          <p>Đây là không gian cá nhân, nơi mình chia sẻ đôi nét về bản thân, những điều mình quan tâm và các dự án đã thực hiện.</p>
+          <p>Bạn có thể thay đoạn giới thiệu này bằng câu chuyện, mục tiêu và sở thích của chính mình.</p>
+          <div class="facts"><div><b>01</b><span>Ham học hỏi</span></div><div><b>02</b><span>Yêu sáng tạo</span></div><div><b>03</b><span>Không ngừng khám phá</span></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="projects">
+      <div class="section-heading"><p class="eyebrow">02 / WORK</p><h2>Dự án <span>cá nhân</span></h2><p class="muted">Một vài sản phẩm và ý tưởng mình muốn giới thiệu.</p></div>
+      <div class="cards">
+        <article class="project-card"><div class="card-art art-one">01</div><div class="card-body"><p class="tag">LẬP TRÌNH</p><h3>Website cá nhân</h3><p>Thiết kế và xây dựng một không gian trực tuyến của riêng mình.</p></div></article>
+        <article class="project-card"><div class="card-art art-two">02</div><div class="card-body"><p class="tag">SÁNG TẠO</p><h3>Dự án video</h3><p>Chia sẻ các sản phẩm dựng phim, kể chuyện và nội dung sáng tạo.</p></div></article>
+        <article class="project-card"><div class="card-art art-three">03</div><div class="card-body"><p class="tag">CÔNG NGHỆ</p><h3>Ý tưởng đang phát triển</h3><p>Ghi lại những thử nghiệm, bài học và sản phẩm mới.</p></div></article>
+      </div>
+    </section>
+
+    <section class="section" id="gallery">
+      <div class="section-heading"><p class="eyebrow">03 / MOMENTS</p><h2>Thư viện <span>ảnh</span></h2><p class="muted">Thay các ô bên dưới bằng ảnh của bạn.</p></div>
+      <div class="gallery">
+        <label class="gallery-item g1" for="galleryInput1"><img alt="Ảnh thư viện 01" hidden><span class="image-placeholder">＋<small>Ảnh 01 · Tải ảnh</small></span><input class="image-input" id="galleryInput1" type="file" accept="image/*"></label>
+        <label class="gallery-item g2" for="galleryInput2"><img alt="Ảnh thư viện 02" hidden><span class="image-placeholder">＋<small>Ảnh 02 · Tải ảnh</small></span><input class="image-input" id="galleryInput2" type="file" accept="image/*"></label>
+        <label class="gallery-item g3" for="galleryInput3"><img alt="Ảnh thư viện 03" hidden><span class="image-placeholder">＋<small>Ảnh 03 · Tải ảnh</small></span><input class="image-input" id="galleryInput3" type="file" accept="image/*"></label>
+        <label class="gallery-item g4" for="galleryInput4"><img alt="Ảnh thư viện 04" hidden><span class="image-placeholder">＋<small>Ảnh 04 · Tải ảnh</small></span><input class="image-input" id="galleryInput4" type="file" accept="image/*"></label>
+        <label class="gallery-item g5" for="galleryInput5"><img alt="Ảnh thư viện 05" hidden><span class="image-placeholder">＋<small>Ảnh 05 · Tải ảnh</small></span><input class="image-input" id="galleryInput5" type="file" accept="image/*"></label>
+        <label class="gallery-item g6" for="galleryInput6"><img alt="Ảnh thư viện 06" hidden><span class="image-placeholder">＋<small>Ảnh 06 · Tải ảnh</small></span><input class="image-input" id="galleryInput6" type="file" accept="image/*"></label>
+      </div>
+    </section>
+
+    <section class="section" id="achievements">
+      <div class="section-heading"><p class="eyebrow">04 / MILESTONES</p><h2>Thành tích & <span>hành trình</span></h2></div>
+      <div class="timeline">
+        <div class="timeline-item"><span class="year">20XX</span><div><h3>Cột mốc đầu tiên</h3><p>Thêm thành tích hoặc trải nghiệm đáng nhớ của bạn.</p></div></div>
+        <div class="timeline-item"><span class="year">20XX</span><div><h3>Một điều đã học được</h3><p>Mô tả ngắn gọn về quá trình học tập, rèn luyện.</p></div></div>
+        <div class="timeline-item"><span class="year">HIỆN TẠI</span><div><h3>Tiếp tục phát triển</h3><p>Chia sẻ mục tiêu hoặc dự định trong thời gian tới.</p></div></div>
+      </div>
+    </section>
+
+    <section class="section contact" id="contact">
+      <div class="section-heading"><p class="eyebrow">05 / SAY HELLO</p><h2>Kết nối <span>với mình</span></h2><p class="muted">Có thể thay các liên kết bên dưới bằng thông tin bạn muốn công khai.</p></div>
+      <div class="contact-links"><a href="mailto:your-email@example.com">✉ Email <span>↗</span></a><a href="https://github.com/" target="_blank" rel="noopener">⌘ GitHub <span>↗</span></a><a href="https://www.facebook.com/" target="_blank" rel="noopener">◎ Facebook <span>↗</span></a></div>
+    </section>
+  </main>
+  <footer><a class="logo" href="#home">TRUNGKIEN<span>.</span></a><p>© <span id="year"></span> Trần Trung Kiên. Được tạo bằng HTML, CSS & JavaScript.</p><a href="#home">Lên đầu trang ↑</a></footer>
+  <audio id="bgMusic" loop preload="none"><source src="assets/audio/music.mp3" type="audio/mpeg"></audio>
+</body>
+</html>
